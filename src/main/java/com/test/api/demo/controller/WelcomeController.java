@@ -9,7 +9,7 @@ public class WelcomeController {
 	
 	@RequestMapping("")
 	public String hello() {
-		return "欢迎使用！";
+		return "欢迎使用！！";
 		}
 	
 }
