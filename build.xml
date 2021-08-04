@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="plate_id_sample_service" xmlns:jacoco="antlib:org.jacoco.ant">
+<project name="demo" xmlns:jacoco="antlib:org.jacoco.ant">
     <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
         <classpath path="/Users/caijiaqiang/Downloads/jacoco-0.8.7/lib/jacocoant.jar"/>
     </taskdef>
