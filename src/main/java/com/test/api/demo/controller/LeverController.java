@@ -21,10 +21,10 @@ public class LeverController {
 			return "Wrong number!";
 		}
         int resp = classA + classB;
-        if(resp > 100 & resp <= 200){
-        	return "Lever A"; 
-        }else if(resp > 200){
-        	return "Invalid result!";
+        if(resp > 200){
+        	return "Invalid result!"; 
+        }else if(resp > 100 & resp <= 200){
+        	return "Lever A";
         }else if(resp > 0 & resp <=100) {
         	return "Lever B";
         }else {
