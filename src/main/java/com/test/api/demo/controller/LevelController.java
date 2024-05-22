@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class LeverController {
+public class LevelController {
 	@GetMapping("eggs")
     public String eggs(){
 		return "*****************彩蛋***********************";
         }
 	
 	@GetMapping("level/total")
-    public String totalLever(@RequestParam("class1") int class1,
+    public String totalLevel(@RequestParam("class1") int class1,
     		@RequestParam("class2") int class2){
 		if(class1 < 0 | class2 < 0) {
 			return "Wrong numbers!";
