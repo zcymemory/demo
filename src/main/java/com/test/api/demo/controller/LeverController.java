@@ -14,7 +14,7 @@ public class LeverController {
 		return "*****************彩蛋***********************";
         }
 	
-	@GetMapping("lever/total")
+	@GetMapping("level/total")
     public String totalLever(@RequestParam("class1") int class1,
     		@RequestParam("class2") int class2){
 		if(class1 < 0 | class2 < 0) {
@@ -23,12 +23,12 @@ public class LeverController {
         int resp = class1 + class2;
         if(resp > 20){
         	return "Invalid result!!!";
-        }else if(resp > 10 & resp <= 20){
-        	return "Lever 1";
-        }else if(resp > 0 & resp <=10) {
-        	return "Lever 2";
+        }else if(resp > 10){
+        	return "Level 1";
+        }else if(resp > 0) {
+        	return "Level 2";
         }else {
-        	return "Lever 3";
+        	return "Level 3";
         }
     }
 }
