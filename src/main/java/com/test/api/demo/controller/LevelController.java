@@ -13,6 +13,10 @@ public class LevelController {
     public String eggs(){
 		return "*****************彩蛋***********************";
         }
+	@GetMapping("egg")
+	public String egg(){
+		return "*****************彩蛋111***********************";
+	}
 	
 	@GetMapping("level/total")
     public String totalLevel(@RequestParam("class1") int class1,
