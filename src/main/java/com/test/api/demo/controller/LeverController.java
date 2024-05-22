@@ -9,28 +9,26 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class LeverController {
-	@GetMapping("egg")
-    public String egg(){
+	@GetMapping("eggs")
+    public String eggs(){
 		return "*****************彩蛋***********************";
         }
 	
 	@GetMapping("lever/total")
-    public String totalLever(@RequestParam("classA") int classA,
-    		@RequestParam("classB") int classB){
-		if(classA < 0 | classB < 0) {
-			return "Wrong number!";
+    public String totalLever(@RequestParam("class1") int class1,
+    		@RequestParam("class2") int class2){
+		if(class1 < 0 | class2 < 0) {
+			return "Wrong numbers!";
 		}
-        int resp = classA + classB;
-        if(resp > 200){
-        	return "Invalid result!"; 
-        }else if(resp > 100 & resp <= 200){
-        	return "Lever A";
-        }else if(resp > 0 & resp <=100) {
-        	return "Lever B";
+        int resp = class1 + class2;
+        if(resp > 20){
+        	return "Invalid result!!!";
+        }else if(resp > 10 & resp <= 20){
+        	return "Lever 1";
+        }else if(resp > 0 & resp <=10) {
+        	return "Lever 2";
         }else {
-        	return "Lever C";
+        	return "Lever 3";
         }
-        
     }
-
 }
