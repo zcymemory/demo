@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LeverController {
 	@GetMapping("egg")
     public String egg(){
-		return "****************彩蛋***********************";	
+		return "*****************彩蛋***********************";
         }
 	
 	@GetMapping("lever/total")
